@@ -1,6 +1,6 @@
 {
-  "trailingComma": "none",
-  "useTabs": false,
+  "trailingComma": "es5",
+  "useTabs": true,
   "tabWidth": 2,
   "proseWrap": "never",
   "semi": false,
