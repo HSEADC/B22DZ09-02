@@ -4,23 +4,72 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>О космосе</title>
-	<!-- <script defer src="index.436149dc5996fb6c9bc1.js"></script>
-	<link href="index.e9dc13dd3209fe73b80e.css" rel="stylesheet"> -->
+	<title>Об украшениях</title>
 </head>
 
 <body class="index">
-	<h1>О космосе</h1>
-	<h2>Разделы</h2>
-	<ul>
-		<li><a href="spaceships.html">Космические корабли</a></li>
-		<li><a href="spaceobjects.html">Космические объекты</a></li>
-	</ul>
-	<h2>Космические объекты</h2>
-	<ul><a href="spaceobjects/moon.html">Луна</a></ul>
+	<header>
+		<div class="menu">
+			<div class="logo"></div>
+			<div class="options">
+				<div><a href="/">сплэш</a></div>
+				<div><a href="about.html">о проекте</a></div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="splash">
+			<div class="container">
+				<div class="text">
+					<h1>Дорогой читатель, Gleam&Glow ждет вас</h1>
+					<p class="textmini">Мы уже готовим увлекательные <span class="vesterbro">факты и материалы</span> про
+					захватывающий мир украшений, чтобы держать
+					вас в курсе всех <span class="vesterbro">важных событий</span></p>
+				</div>
+				<div class="jewels"></div>
+			</div>
+			<div class="mails">
+				<div class="mailsboxes">
+					<p>Сияйте вместе с нами!</p>
+					<div class="mailstroke">
+						<form id="subscriptionForm" action="https://usebasin.com/f/c6f2314079a1" method="POST">
+							<input type="email" id="email" name="email" placeholder="Ваш Email">
+							<input type="submit" id="button" value="Подписаться">
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="form-onboarding"></div>
+		</section>
+	</main>
+	<script>
+		document.getElementById('subscriptionForm').addEventListener('submit', function (event) {
+			event.preventDefault(); 
 
-	<h2>Космические корабли</h2>
-	<ul><a href="spaceships/buran.html">Буран</a></ul>
+			var email = document.getElementById('email').value;
+
+			if (email.trim() === '') {
+				console.log('Email field is empty');
+				return; 
+			}
+
+			fetch('https://usebasin.com/f/c6f2314079a1', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify({ email: email }),
+			}).then(response => {
+				if (response.ok) {
+					window.location.href = 'https://app.formbricks.com/s/cloc59ayb5acnpm0gomzz9tmp';
+				} else {
+					console.error('Failed to save email to Basin');
+				}
+			}).catch(error => {
+				console.error('Error:', error);
+			});
+		});
+	</script>
 </body>
 
 </html>

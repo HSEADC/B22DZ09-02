@@ -73,6 +73,13 @@ module.exports = {
 				},
 			},
 			{
+    			test: /\.gif/,
+    			type: 'asset/resource',
+    			generator: {
+        		filename: 'images/[hash][ext][query]',
+    			},
+			},
+			{
 				test: /\.svg/,
 				type: 'asset/resource',
 				generator: {
@@ -102,29 +109,55 @@ module.exports = {
 		
 		// Section
 				new HtmlWebpackPlugin({
-		  template: './src/spaceobjects.html',
-		  filename: './spaceobjects.html'
+		  template: './src/archive.html',
+		  filename: './archive.html'
 		}),
 
 				new HtmlWebpackPlugin({
-		  template: './src/spaceships.html',
-		  filename: './spaceships.html'
+		  template: './src/about.html',
+		  filename: './about.html'
+		}),
+
+				new HtmlWebpackPlugin({
+		  template: './src/history.html',
+		  filename: './history.html'
+		}),
+
+				new HtmlWebpackPlugin({
+		  template: './src/tendencies.html',
+		  filename: './tendencies.html'
+		}),
+				new HtmlWebpackPlugin({
+		  template: './src/industry.html',
+		  filename: './industry.html'
 		}),
 
 		
 
 		// Article
 		new HtmlWebpackPlugin({
-		  template: './src/spaceobjects/moon.html',
-		  filename: './spaceobjects/moon.html'
+		  template: './src/history/westwood.html',
+		  filename: './history/westwood.html'
 		}),
 
 		new HtmlWebpackPlugin({
-		  template: './src/spaceships/buran.html',
-		  filename: './spaceships/buran.html'
+		  template: './src/industry/uno.html',
+		  filename: './industry/uno.html'
 		}),
 
-		// Partials
+		new HtmlWebpackPlugin({
+		  template: './src/tendencies/gold.html',
+		  filename: './tendencies/gold.html'
+		}),
+
+
+		// Card
+		new HtmlWebpackPlugin({
+		  template: './src/archive/gemstone.html',
+		  filename: './archive/gemstone.html'
+		}),
+
+		// Analytics
 		new HtmlWebpackPartialsPlugin([
 			{
 				path: path.join(__dirname, './src/partials/analytics.html'),

@@ -1,0 +1,306 @@
+body.about {
+    background: #F1F0F0;
+    font-family: 'Fer';
+
+    header {
+        position: sticky;
+        top: 1.04vw;
+        z-index: 1000;
+        margin: 1% auto;
+        width: 97.22vw;
+        height: 20%;
+        border-radius: 12px;
+        background-color: rgba(255, 255, 255, 0.50);
+        backdrop-filter: blur(12.5px);
+    }
+
+    a {
+        color: #707070;
+        font-family: Fer;
+        text-decoration: none;
+    }
+
+         .container {
+            position: relative;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin: 1vw;
+        background-image: url(images/gleam&glow.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 12.29vw;
+    }
+
+    .options {
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+            font-family: Fer;
+            font-size: 1.67vw;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: -0.07vw;
+            margin: 1vw;
+    }
+
+        .maintext {
+        font-size: 7.42vw;
+        width: 52.07vw;
+        margin-left: 4.17vw;
+        margin-top: 3.47vw;
+        // width: 90%;
+        height: auto;
+    }
+
+         .minitext {
+        font-size: 2.1vw;
+        margin-left: 4.17vw;
+        margin-top: 3.69vw;
+        width: 40.81vw;
+        // width: 90%;
+        height: auto;
+    }
+
+        .timeline {
+        position: absolute;
+        margin-top: 13.89vw;
+        background-image: url(images/timeline.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 66.29vw;
+        height: 212.50vw;
+        flex-grow: 4;
+    }
+
+        .collegi {
+            background-image: url(images/danyegor.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 45.99vw;
+            height: 33.18vw;
+            margin-top: 10.08vw;
+            margin-left: 23.36vw;
+            display: flex;
+        }
+
+        .decision {
+            font-size: 2.2vw;
+            margin-top: 6.25vw;
+            margin-left: 55.56vw;
+            width: 40.99vw;
+            height: 11.18vw;
+        }
+
+        .identity {
+            background-image: url(images/identity.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 45.99vw;
+            height: 33.18vw;
+            margin-top: 4.08vw;
+            margin-left: 23.36vw;
+            display: flex;
+        }
+
+        .philosophy {
+            font-size: 2.2vw;
+            margin-top: 4.25vw;
+            margin-left: 16.56vw;
+            width: 31.99vw;
+            height: 4.18vw;
+        }
+
+        .philosophywords {
+            font-family: Vesterbro;
+            font-style: italic;
+            font-size: 2.2vw;
+            margin-top: 8.25vw;
+            margin-left: 35.56vw;
+            width: 35.99vw;
+            height: 11.18vw;
+        }
+
+        .plans {
+            font-size: 2.2vw;
+            margin-top: 10.25vw;
+            margin-left: 50.56vw;
+            width: 40.99vw;
+            height: 11.18vw;
+        }
+
+        .final {
+            background-image: url(images/final.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 54.99vw;
+            height: 33.18vw;
+            margin-top: -10.92vw;
+            margin-left: 5.359999999999999vw;
+            //  display: flex;
+        }
+
+
+
+    //     .danya {
+    //     margin-top: 12.89vw;
+    //     background-image: url(images/egor.svg);
+    //     background-size: contain;
+    //     background-repeat: no-repeat;
+    //     width: 26.29vw;
+    //     height: 212.50vw;
+    // }
+
+    //     .danyatext {
+    //         color: #505050;
+    //         font-family: Vesterbro;
+    //         font-size: 20px;
+    //         font-style: italic;
+    //         font-weight: 500;
+    //         line-height: 110%;
+    //         letter-spacing: -0.6px;
+    //     }
+
+    //     .egor {
+    //     margin-top: 6.89vw;
+    //     background-image: url(images/danya.svg);
+    //     background-size: contain;
+    //     background-repeat: no-repeat;
+    //     width: 26.29vw;
+    //     height: 212.50vw;
+    // }
+
+    .who {
+        font-size: 2.2vw;
+        margin-top: 25.25vw;
+        margin-left: 55.56vw;
+        width: 30.99vw;
+        height: 11.18vw;
+    }
+
+    .mails {   
+        width: 95%;
+        height: 9.44vw;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.70);
+        box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.10);
+        backdrop-filter: blur(15.5px);
+        margin: 0 auto;
+        margin-bottom: 1.39vw;
+    }
+
+        .eras {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.54vw;
+    }
+
+    .mailsboxes {
+        margin-left: 3.07vw;
+        // margin-top: 15.28vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mailstroke {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0.94vw;
+    }
+
+    #email {
+        width: auto;
+        box-sizing: border-box;
+        border: none;
+        width: 29.03vw;
+        height: 3.89vw;
+        color: #FFF;
+        font-family: Fer;
+        font-size: 1.60vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 67.3%;
+        letter-spacing: -1.168px;
+        flex-shrink: 0;
+        text-align: center;
+        border-radius: 1.25vw;
+        background: #848384;
+        backdrop-filter: blur(5.307222366333008px);
+    }
+
+    #button {
+        cursor: pointer;
+        width: auto;
+        box-sizing: border-box;
+        margin-left: 5px;
+        border: none;
+        width: 18.40vw;
+        height: 3.89vw;
+        color: #505050;
+        font-family: Fer;
+        font-size: 1.60vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 67.3%;
+        letter-spacing: -1.168px;
+        text-align: center;
+        flex-shrink: 0;
+        border-radius: 1.25vw;
+        background: rgba(216, 213, 213, 0.50);
+        backdrop-filter: blur(10px);
+    }
+
+    ::placeholder {
+        color: white;
+    }
+
+        h1 {
+        color: #505050;
+        font-family: Vesterbro;
+        font-size: 4.42vw;
+        font-style: italic;
+        font-weight: 200;
+        line-height: 100.8%;
+        letter-spacing: -0.30vw;
+    }
+
+        p {
+        color: #505050;
+        font-family: Fer;
+        font-size: 1.9vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 105.8%;
+        letter-spacing: -0.08vw;
+        margin-top: 1.04vw;
+    }
+
+    .showreel video {
+        border-radius: 8px;
+        margin-top: 13.89vw;
+        margin-left: 27.78vw;
+    }
+        .showreel video::-webkit-media-controls-panel {
+        background: linear-gradient(180deg, rgba(244, 244, 246, 0.00) 0%, rgba(230, 230, 233, 0.00) 25%, rgba(153, 153, 160, 0.00) 43.75%, rgba(102, 102, 109, 0.44) 100%);
+}
+
+.showreel video::-webkit-media-controls {
+    color: white;
+}
+
+
+
+    article {
+        width: 600px;
+        margin: o auto;
+    }
+    li {
+    font-family: 'Vesterbro';
+    }
+}

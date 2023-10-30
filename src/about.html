@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Об украшениях</title>
+</head>
+
+<body class="about">
+	<header>
+		<div class="menu">
+			<div class="logo"></div>
+			<div class="options">
+				<div><a href="/">сплэш</a></div>
+				<div><a href="about.html">о проекте</a></div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="container">
+			 <h1 class="maintext">Привет, это наша история</h1>
+			 <p class="minitext">Расскажем, кто мы такие, зачем создали этот проект и кому он будет полезным
+			в нашем любимом формате Эволюции</p>
+			<div class="timeline"></div>
+			<div class="eras">
+				<div>
+					<div class="who">
+						<p>Мы, Егор и Даниэль, — создатели
+							и редакторы gleam&glow, влюбились <br>
+							в ювелирку уже давно, но идея проекта
+							нам пришла совсем недавно</p>
+						<p>
+							Нами движила идея создать ресурс, который объединит наши знания
+							и любовь к дизайну украшений в одном месте и позволит транслировать трепетное отношения к тонкому делу
+							</p>
+						</div>
+						<div class="collegi"></div>
+				</div>
+				<div class="showreel">
+					<video width="840" height="560" controls>
+						<source src="images/showreel.mp4" type="video/mp4">
+					</video>
+				</div>
+				<p class="decision">
+					Мы решили — пора создавать, и приступили к дизайну, разработке
+					и позиционированию
+				</p>
+				<div class="identity"></div>
+				<p class="philosophy">В мире украшений нет границ
+				и мы не хотим ставить их для вас,
+				наша философия проста:</p>
+				<p class="philosophywords">«Мы инклюзивны и хотим, чтобы в ювелирный дизайн погрузились все, вне зависимости от пола, возраста или достатка»</p>
+				<p class="plans">
+					Хотим поделиться планами на будущее, совсем скоро мы запустим бета-версию нашего сайта, а уже весной вы целиком сможете
+					погрузиться в мир украшений
+				</p>
+				<div class="final"></div>
+			</div>
+			<div>
+			</div>
+		</section>
+	</main>
+	<footer>
+					<div class="mails">
+				<div class="mailsboxes">
+					<p>Сияйте вместе с нами!</p>
+					<div class="mailstroke">
+						<form id="subscriptionForm" action="https://usebasin.com/f/c6f2314079a1" method="POST">
+							<input type="email" id="email" name="email" placeholder="Ваш Email">
+							<input type="submit" id="button" value="Подписаться">
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="form-onboarding"></div>
+	</footer>
+	<script>
+		document.getElementById('subscriptionForm').addEventListener('submit', function (event) {
+			event.preventDefault();
+
+			var email = document.getElementById('email').value;
+
+			if (email.trim() === '') {
+				console.log('Email field is empty');
+				return;
+			}
+
+			fetch('https://usebasin.com/f/c6f2314079a1', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify({ email: email }),
+			}).then(response => {
+				if (response.ok) {
+					window.location.href = 'https://app.formbricks.com/s/cloc59ayb5acnpm0gomzz9tmp';
+				} else {
+					console.error('Failed to save email to Basin');
+				}
+			}).catch(error => {
+				console.error('Error:', error);
+			});
+		});
+	</script>
+</body>
+
+</html>

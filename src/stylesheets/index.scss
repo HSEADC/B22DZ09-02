@@ -1,8 +1,196 @@
-body.section {
-    background-color: var(--white);
+body.index {
+    background: #F1F0F0;
+    font-family: 'Fer';
+    overflow: hidden;
+
+    header {
+        position: sticky;
+        margin: 1% auto;
+        width: 97.22vw;
+        height: 20%;
+        border-radius: 12px;
+        background-color: rgba(255, 255, 255, 0.50);
+        backdrop-filter: blur(67.5px);
+    }
+
+    a {
+        color: #707070;
+        font-family: Fer;
+        text-decoration: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin: 1vw;
+        background-image: url(images/gleam&glow.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 12.29vw;
+    }
+
+    .options {
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+            font-family: Fer;
+            font-size: 1.67vw;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: -0.07vw;
+            margin: 1vw;
+    }
+
+    .splash {
+        position: relative;
+        margin: 0% auto;
+        width: 97.22vw;
+        height: 902px;
+        border-radius: 12px;
+        background-color: rgba(255, 255, 255, 0.50);
+        backdrop-filter: blur(67.5px);
+    }
+
+     .container {
+        display: flex;
+        flex-direction: row;
+        height: 70%;
+    }
+
+    .jewels {
+        background-image: url(images/tiffany.gif);
+        background-size: contain;
+        background-repeat: no-repeat;
+        max-width: 100%;
+            /* Adjust the max-width to ensure it doesn't exceed the viewport */
+        flex-grow: 1;
+    }
+
+    .text {
+        width: 51.60vw;
+        height: 23.75vw;
+        padding: 45px;
+    }
+
+    .textmini {
+        margin-top: 0.69vw;
+        width: 33.96vw;
+    }
+
+    h1 {
+        color: #505050;
+        font-family: Vesterbro;
+        font-size: 4.42vw;
+        font-style: italic;
+        font-weight: 200;
+        line-height: 100.8%;
+        letter-spacing: -0.30vw;
+    }
+
+    p {
+        color: #505050;
+        font-family: Fer;
+        font-size: 1.9vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 105.8%;
+        letter-spacing: -0.08vw;
+        margin-top: 1.04vw;
+    }
+
+    .vesterbro {
+        color: #505050;
+        font-family: Vesterbro;
+        font-size: 1.9vw;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 105.8%;
+        letter-spacing: -0.07vw;   
+    }
+
+        .mails {
+            width: 95%;
+            height: 9.44vw;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.70);
+            box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.10);
+            backdrop-filter: blur(15.5px);
+            margin: 0 auto;
+        }
     
+        .eras {
+            display: flex;
+            flex-direction: column;
+            margin-top: 0.54vw;
+        }
+    
+        .mailsboxes {
+            margin-left: 3.07vw;
+            // margin-top: 15.28vw;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .mailstroke {
+            display: flex;
+            flex-direction: row;
+            margin-top: 0.94vw;
+        }
+    
+        #email {
+            width: auto;
+            box-sizing: border-box;
+            border: none;
+            width: 29.03vw;
+            height: 3.89vw;
+            color: #FFF;
+            font-family: Fer;
+            font-size: 1.60vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 67.3%;
+            letter-spacing: -1.168px;
+            flex-shrink: 0;
+            text-align: center;
+            border-radius: 1.25vw;
+            background: #848384;
+            backdrop-filter: blur(5.307222366333008px);
+        }
+    
+        #button {
+            cursor: pointer;
+            width: auto;
+            box-sizing: border-box;
+            margin-left: 5px;
+            border: none;
+            width: 18.40vw;
+            height: 3.89vw;
+            color: #505050;
+            font-family: Fer;
+            font-size: 1.60vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 67.3%;
+            letter-spacing: -1.168px;
+            text-align: center;
+            flex-shrink: 0;
+            border-radius: 1.25vw;
+            background: rgba(216, 213, 213, 0.50);
+            backdrop-filter: blur(10px);
+        }
+    
+        ::placeholder {
+            color: white;
+        }
     article {
         width: 600px;
         margin: o auto;
+    }
+    li {
+    font-family: 'Vesterbro';
     }
 }
